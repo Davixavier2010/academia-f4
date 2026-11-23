@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia F4 Natação &amp; Fitness | Urbanova - São José dos Campos SP</title>
+  <meta name="description" content="Academia F4 Natação e Fitness no Urbanova em São José dos Campos. Piscinas aquecidas e tratadas com metodologia individualizada, musculação completa, turmas reduzidas e 15 anos de história.">
+  <meta name="keywords" content="academia F4, natação São José dos Campos, musculação Urbanova, hidroginástica SJC, natação infantil, academia Urbanova, fitness SJC">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/f4-icon.svg">
+
+  <!-- Google Fonts: Montserrat (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            f4: {
+              orange: '#FF6600',
+              orangeHover: '#EA580C',
+              orangeLight: '#FF8533',
+              deep: '#0B0E14',
+              dark: '#10141D',
+              card: '#151B26',
+              cardHover: '#1C2433',
+              water: '#0EA5E9',
+              waterDark: '#0284C7',
+            }
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-f4-deep text-slate-100 antialiased selection:bg-f4-orange selection:text-white overflow-x-hidden">
+
+  <!-- TOP STATUS & ANNOUNCEMENT BAR -->
+  <div class="bg-gradient-to-r from-f4-dark via-[#182030] to-f4-dark text-slate-200 py-2 px-4 text-xs md:text-sm font-medium border-b border-white/10 flex flex-wrap items-center justify-between gap-3 max-w-7xl mx-auto">
+    <div class="flex items-center gap-3">
+      <div id="liveStatusBadge" class="flex items-center gap-2 bg-black/40 px-3 py-1 rounded-full border border-white/5">
+        <span class="status-dot-active"></span>
+        <span class="text-green-400 font-bold">Aberto agora • Fecha às 21:00</span>
+      </div>
+      <span class="hidden sm:inline-block text-slate-400">|</span>
+      <span class="hidden sm:inline-block text-slate-300">
+        <i class="fa-solid fa-location-dot text-f4-orange mr-1"></i> Av. Shishima Hifumi, 1250 - Urbanova
+      </span>
+    </div>
+
+    <div class="flex items-center gap-4 text-xs">
+      <a href="tel:1232045859" class="hover:text-f4-orange transition-colors flex items-center gap-1 font-semibold">
+        <i class="fa-solid fa-phone text-f4-orange"></i> (12) 3204-5859
+      </a>
+      <a href="#aula-gratis" class="hidden md:inline-flex items-center gap-1 text-f4-orange hover:text-f4-orangeLight font-bold">
+        <span>15 Anos de Tradição • Agende sua Aula Experimental Grátis</span>
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- HEADER / NAVBAR -->
+  <header id="mainHeader" class="sticky top-0 left-0 w-full z-50 transition-all duration-300 border-b border-white/5 bg-f4-deep/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#inicio" class="flex items-center gap-3 group" aria-label="F4 Natação & Fitness - Página Inicial">
+          <div class="w-48 h-12 flex items-center">
+            <img src="assets/icons/f4-logo.svg" alt="F4 Natação &amp; Fitness Logo" class="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+          </div>
+        </a>
+
+        <!-- Desktop Navigation (Sem links de preço ou professores avulsos) -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium">
+          <a href="#inicio" class="text-white hover:text-f4-orange transition-colors font-semibold">Início</a>
+          <a href="#sobre" class="text-slate-300 hover:text-f4-orange transition-colors">A Academia</a>
+          <a href="#modalidades" class="text-slate-300 hover:text-f4-orange transition-colors">Modalidades</a>
+          <a href="#planos" class="text-slate-300 hover:text-f4-orange transition-colors">Planos &amp; Atendimento</a>
+          <a href="#imc" class="text-slate-300 hover:text-f4-orange transition-colors">Calculadora IMC</a>
+          <a href="#galeria" class="text-slate-300 hover:text-f4-orange transition-colors">Galeria</a>
+          <a href="#depoimentos" class="text-slate-300 hover:text-f4-orange transition-colors">Avaliações</a>
+          <a href="#localizacao" class="text-slate-300 hover:text-f4-orange transition-colors">Horários &amp; Local</a>
+        </nav>
+
+        <!-- CTA & Quick Contact -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="#aula-gratis" class="btn-orange px-5 py-2.5 text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+            <i class="fa-regular fa-calendar-check text-sm"></i>
+            <span>Aula Grátis</span>
+          </a>
+          <a href="https://wa.me/551232045859?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20da%20Academia%20F4." target="_blank" rel="noopener noreferrer" class="btn-cyan-outline px-4 py-2.5 text-xs font-bold uppercase tracking-wider flex items-center gap-2" aria-label="Conversar no WhatsApp">
+            <i class="fa-brands fa-whatsapp text-sm text-f4-water"></i>
+            <span class="hidden xl:inline">WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobileMenuBtn" aria-label="Abrir Menu de Navegação" class="lg:hidden p-2 text-white hover:text-f4-orange transition-colors">
+          <i class="fa-solid fa-bars text-2xl text-f4-orange"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-f4-card/95 border-b border-white/10 backdrop-blur-2xl px-6 py-6 transition-all duration-300 shadow-2xl">
+      <div class="flex flex-col gap-4 text-base font-semibold">
+        <a href="#inicio" class="text-white hover:text-f4-orange py-1">Início</a>
+        <a href="#sobre" class="text-slate-300 hover:text-f4-orange py-1">A Academia &amp; Diferenciais</a>
+        <a href="#modalidades" class="text-slate-300 hover:text-f4-orange py-1">Modalidades Esportivas</a>
+        <a href="#planos" class="text-slate-300 hover:text-f4-orange py-1">Planos &amp; Atendimento</a>
+        <a href="#imc" class="text-slate-300 hover:text-f4-orange py-1">Calculadora de Treino IMC</a>
+        <a href="#galeria" class="text-slate-300 hover:text-f4-orange py-1">Galeria de Fotos</a>
+        <a href="#depoimentos" class="text-slate-300 hover:text-f4-orange py-1">Avaliações dos Alunos</a>
+        <a href="#localizacao" class="text-slate-300 hover:text-f4-orange py-1">Horários &amp; Localização</a>
+        <a href="#faq" class="text-slate-300 hover:text-f4-orange py-1">Dúvidas Frequentes (FAQ)</a>
+        
+        <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+          <a href="#aula-gratis" class="btn-orange text-center py-3 text-sm font-black uppercase tracking-wider">
+            Agendar Aula Experimental Grátis
+          </a>
+          <a href="https://wa.me/551232045859?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20da%20Academia%20F4." target="_blank" rel="noopener noreferrer" class="btn-cyan-outline text-center py-3 text-sm font-bold flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg text-f4-water"></i> Falar no WhatsApp: (12) 3204-5859
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION (#inicio) - VISUAL LIMPO, IMPACTANTE E SEM A IMAGEM REPETIDA
+       ========================================================================== -->
+  <section id="inicio" class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden bg-grid-pattern">
+    <!-- Ambient Athletic Glow Effects -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-gradient-to-r from-f4-orange/15 to-f4-water/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      
+      <!-- Trust Badge / 15 Anos -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-f4-card border border-white/10 text-xs font-semibold text-slate-300 mb-8 shadow-lg">
+        <span class="w-2 h-2 rounded-full bg-f4-orange animate-ping"></span>
+        <span class="text-f4-orange font-bold uppercase tracking-wider">Desde 2011</span>
+        <span class="text-slate-500">•</span>
+        <span>15 Anos de Tradição e Saúde no Urbanova</span>
+      </div>
+
+      <!-- Main Hero Headline -->
+      <h1 class="font-heading font-black text-4xl sm:text-6xl md:text-7xl tracking-tight leading-[1.05] text-white mb-6">
+        NADA MAIS.<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-f4-orange via-[#FF7A1A] to-amber-400">
+          VIVA MELHOR.
+        </span>
+      </h1>
+
+      <!-- Subheadline & Philosophy -->
+      <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed max-w-3xl mx-auto mb-10">
+        <strong class="text-white font-semibold">Seu bem-estar em primeiro lugar.</strong> Centro especializado em <span class="text-white font-semibold underline decoration-f4-water/60">Natação com turmas reduzidas</span> e <span class="text-white font-semibold underline decoration-f4-orange/60">Musculação completa</span>. Metodologia individualizada, piscinas aquecidas e equipe acolhedora em São José dos Campos.
+      </p>
+
+      <!-- 4 Pillars Cards (Horizontal Centered Layout) -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-4xl mx-auto mb-10 text-left">
+        <div class="flex items-center gap-3 p-3.5 rounded-xl bg-f4-card/80 border border-white/10 hover:border-f4-water/40 transition-colors">
+          <div class="w-10 h-10 rounded-lg bg-f4-water/15 text-f4-water flex items-center justify-center text-lg flex-shrink-0">
+            <i class="fa-solid fa-person-swimming"></i>
+          </div>
+          <div class="text-xs font-bold leading-tight">
+            <span class="text-white block">NATAÇÃO</span>
+            <span class="text-slate-400 text-[11px] font-normal">Turmas reduzidas</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-3.5 rounded-xl bg-f4-card/80 border border-white/10 hover:border-f4-orange/40 transition-colors">
+          <div class="w-10 h-10 rounded-lg bg-f4-orange/15 text-f4-orange flex items-center justify-center text-lg flex-shrink-0">
+            <i class="fa-solid fa-dumbbell"></i>
+          </div>
+          <div class="text-xs font-bold leading-tight">
+            <span class="text-white block">MUSCULAÇÃO</span>
+            <span class="text-slate-400 text-[11px] font-normal">Equipe atenciosa</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-3.5 rounded-xl bg-f4-card/80 border border-white/10 hover:border-emerald-500/40 transition-colors">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-lg flex-shrink-0">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <div class="text-xs font-bold leading-tight">
+            <span class="text-white block">CONDICIONAMENTO</span>
+            <span class="text-slate-400 text-[11px] font-normal">Treino funcional</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-3.5 rounded-xl bg-f4-card/80 border border-white/10 hover:border-purple-500/40 transition-colors">
+          <div class="w-10 h-10 rounded-lg bg-purple-500/15 text-purple-400 flex items-center justify-center text-lg flex-shrink-0">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+          <div class="text-xs font-bold leading-tight">
+            <span class="text-white block">QUALIDADE DE VIDA</span>
+            <span class="text-slate-400 text-[11px] font-normal">Saúde &amp; longevidade</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action CTAs -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-10">
+        <a href="#aula-gratis" class="btn-orange px-8 py-4 text-sm font-extrabold uppercase tracking-wider flex items-center justify-center gap-2 w-full sm:w-auto shadow-xl">
+          <i class="fa-regular fa-calendar-check text-base"></i>
+          <span>Agendar Aula Grátis</span>
+        </a>
+        <a href="https://wa.me/551232045859?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20modalidades%20da%20Academia%20F4." target="_blank" rel="noopener noreferrer" class="btn-cyan-outline px-7 py-4 text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 w-full sm:w-auto">
+          <i class="fa-brands fa-whatsapp text-f4-water text-lg"></i>
+          <span>Falar no WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Google & Facebook Social Proof -->
+      <div class="pt-6 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs text-slate-400 border-t border-white/5 max-w-2xl mx-auto">
+        <div class="flex items-center gap-2">
+          <div class="flex text-amber-400 text-sm">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div>
+            <span class="font-bold text-white text-sm">4,2</span>
+            <span class="text-slate-400 ml-1">(180 avaliações no Google)</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span class="w-5 h-5 rounded-full bg-blue-600/30 text-blue-400 flex items-center justify-center font-bold text-[10px]">
+            <i class="fa-brands fa-facebook-f"></i>
+          </span>
+          <span class="text-slate-300">Recomendado por <strong class="text-white">94%</strong> (366 avaliações)</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       STATS & IMPACT METRICS (#statsSection)
+       ========================================================================== -->
+  <section id="statsSection" class="py-12 border-y border-white/10 bg-f4-dark/50 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        
+        <div class="flex flex-col items-center">
+          <div class="text-4xl sm:text-5xl font-black font-heading text-f4-orange mb-1">
+            +<span class="counter-value" data-target="15">0</span>
+          </div>
+          <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Anos de Tradição</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">Fundada em 2011 no Urbanova</div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="text-4xl sm:text-5xl font-black font-heading text-white mb-1 flex items-center">
+            <span class="counter-value" data-target="4.2" data-decimal="true">0</span>
+            <span class="text-amber-400 text-3xl ml-1">★</span>
+          </div>
+          <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Avaliação no Google</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">180+ opiniões verificadas</div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="text-4xl sm:text-5xl font-black font-heading text-f4-water mb-1">
+            <span class="counter-value" data-target="100">0</span>%
+          </div>
+          <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Piscinas Aquecidas</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">Tratamento de água constante</div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="text-4xl sm:text-5xl font-black font-heading text-emerald-400 mb-1">
+            +<span class="counter-value" data-target="3800">0</span>
+          </div>
+          <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Vidas em Movimento</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">Comunidade ativa &amp; saudável</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SOBRE A ACADEMIA F4 & DIFERENCIAIS (#sobre)
+       ========================================================================== -->
+  <section id="sobre" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="badge-pill mb-3">Diferenciais Exclusivos F4</span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
+          Feita para Quem Prioriza <span class="text-f4-orange">Saúde e Resultados Reais</span>
+        </h2>
+        <p class="text-slate-300 mt-4 text-base sm:text-lg leading-relaxed">
+          Localizada no bairro nobre do Urbanova, a Academia F4 combina a excelência técnica da natação com uma sala de musculação completa e acolhedora. Aqui, você nunca é apenas mais um número.
+        </p>
+      </div>
+
+      <!-- Bento Grid Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Bento Card 1: Natação com Poucos Alunos (Destaque Largo) -->
+        <div class="md:col-span-2 f4-card p-8 flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-f4-water/10 rounded-full blur-2xl group-hover:bg-f4-water/20 transition-all duration-500"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-f4-water/15 text-f4-water flex items-center justify-center text-xl mb-6">
+              <i class="fa-solid fa-water-ladder"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-f4-water">Metodologia Personalizada</span>
+            <h3 class="font-heading font-bold text-2xl text-white mt-1 mb-3">
+              Poucos Alunos por Professor na Piscina
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed max-w-xl">
+              Nossa filosofia preza pelo aprendizado com segurança e atenção máxima. Diferente de grandes redes que superlotam as raias, na F4 cada aluno — seja bebê, criança ou adulto — recebe correções técnicas precisas, evolução constante e tranquilidade.
+            </p>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-white/5 flex flex-wrap items-center gap-6 text-xs text-slate-300">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-f4-water"></i> Natação Bebê &amp; Infantil</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-f4-water"></i> Iniciação &amp; Aperfeiçoamento</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-f4-water"></i> Hidroginástica Dinâmica</span>
+          </div>
+        </div>
+
+        <!-- Bento Card 2: Piscina Aquecida -->
+        <div class="f4-card p-8 flex flex-col justify-between relative overflow-hidden group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-f4-orange/15 text-f4-orange flex items-center justify-center text-xl mb-6">
+              <i class="fa-solid fa-temperature-arrow-up"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-f4-orange">Conforto Térmico 365 Dias</span>
+            <h3 class="font-heading font-bold text-xl text-white mt-1 mb-3">
+              Piscinas Aquecidas &amp; Tratadas
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Água límpida, com tratamento moderno e rigoroso controle bacteriológico. Nadar no inverno ou no verão com a temperatura perfeita para o corpo humano.
+            </p>
+          </div>
+          <div class="mt-6 text-xs text-f4-orange font-semibold flex items-center gap-1">
+            <span>Ideal para todas as idades</span>
+            <i class="fa-solid fa-shield-halved text-xs"></i>
+          </div>
+        </div>
+
+        <!-- Bento Card 3: Musculação e Equipe -->
+        <div class="f4-card p-8 flex flex-col justify-between relative overflow-hidden group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-f4-orange/15 text-f4-orange flex items-center justify-center text-xl mb-6">
+              <i class="fa-solid fa-dumbbell"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-f4-orange">Estrutura &amp; Maquinário</span>
+            <h3 class="font-heading font-bold text-xl text-white mt-1 mb-3">
+              Musculação Completa e Espaçosa
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Equipamentos biomecânicos modernos para hipertrofia, emagrecimento, reabilitação e condicionamento físico geral. Treino focado sem filas intermináveis.
+            </p>
+          </div>
+          <div class="mt-6 text-xs text-slate-400">
+            Sala ampla e setorizada para membros superiores e inferiores.
+          </div>
+        </div>
+
+        <!-- Bento Card 4: Atendimento Humanizado (Destaque Largo) -->
+        <div class="md:col-span-2 f4-card p-8 flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-f4-orange/10 rounded-full blur-2xl group-hover:bg-f4-orange/20 transition-all duration-500"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-xl mb-6">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Ambiente Familiar &amp; Seguro</span>
+            <h3 class="font-heading font-bold text-2xl text-white mt-1 mb-3">
+              Instrutores Educados, Atenciosos e Presentes
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed max-w-xl">
+              Nossos professores estão sempre prontos para corrigir a postura, orientar a mecânica correta dos exercícios e garantir que sua experiência física seja segura e gratificante.
+            </p>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-white/5 flex flex-wrap items-center gap-6 text-xs text-slate-300">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Fichas personalizadas</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Suporte nos turnos manhã e noite</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Avaliação física periódica</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODALIDADES ESPORTIVAS (#modalidades)
+       ========================================================================== -->
+  <section id="modalidades" class="py-20 bg-f4-dark/40 border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="badge-pill mb-3">Programas de Treinamento</span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
+            Escolha Como <span class="text-f4-orange">Deseja Evoluir</span>
+          </h2>
+          <p class="text-slate-300 mt-3 text-base max-w-xl">
+            Da primeira braçada dos bebês ao condicionamento físico avançado de atletas adultos, temos a modalidade certa para o seu objetivo.
+          </p>
+        </div>
+
+        <a href="#aula-gratis" class="btn-orange px-6 py-3 text-xs font-bold uppercase tracking-wider self-start md:self-auto flex items-center gap-2">
+          <span>Experimentar uma Modalidade</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Modalities Grid (6 Cards) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Modality 1: Natação Adulto -->
+        <div class="f4-card overflow-hidden flex flex-col group">
+          <div class="h-48 relative overflow-hidden">
+            <img src="assets/images/f4-piscina-google.jpg" alt="Piscina Aquecida F4 Natação Adulto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-f4-card via-f4-card/40 to-transparent"></div>
+            <span class="absolute top-4 left-4 badge-cyan">Turmas Reduzidas</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">Natação Adulto</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Iniciação para quem tem medo ou nunca nadou, e aperfeiçoamento dos 4 nados (crawl, costas, peito e borboleta) com treinos de alta performance cardiovascular.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs">
+              <span class="text-slate-400"><i class="fa-solid fa-clock text-f4-orange mr-1"></i> 45 a 50 min/aula</span>
+              <a href="#aula-gratis" class="text-f4-orange font-bold hover:underline">Agendar Aula &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modality 2: Natação Infantil & Bebês -->
+        <div class="f4-card overflow-hidden flex flex-col group">
+          <div class="h-48 relative overflow-hidden bg-f4-dark flex items-center justify-center">
+            <img src="assets/images/909661577_1850070706858455_8520941677108773353_n_1_.jpg" alt="Natação Infantil e Bebê F4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-f4-card via-f4-card/40 to-transparent"></div>
+            <span class="absolute top-4 left-4 badge-pill">Segurança &amp; Afeto</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">Natação Infantil &amp; Bebês</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Desenvolvimento psicomotor, sobrevivência aquática e estímulo lúdico com acompanhamento pedagógico carinhoso. Mais movimento e menos tempo de tela!
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs">
+              <span class="text-slate-400"><i class="fa-solid fa-child text-f4-water mr-1"></i> A partir de 6 meses</span>
+              <a href="#aula-gratis" class="text-f4-orange font-bold hover:underline">Agendar Aula &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modality 3: Musculação & Biomecânica -->
+        <div class="f4-card overflow-hidden flex flex-col group">
+          <div class="h-48 relative overflow-hidden">
+            <img src="assets/images/f4-interior-google.jpg" alt="Sala de Musculação F4 Fitness" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-f4-card via-f4-card/40 to-transparent"></div>
+            <span class="absolute top-4 left-4 badge-pill">Aparelhos Modernos</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">Musculação &amp; Hipertrofia</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Equipamentos completos de peso livre e máquinas guiadas. Prescrição de treinos focados nos seus objetivos: ganho muscular, perda de gordura e fortalecimento.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs">
+              <span class="text-slate-400"><i class="fa-solid fa-dumbbell text-f4-orange mr-1"></i> Treino Livre ou Orientado</span>
+              <a href="#aula-gratis" class="text-f4-orange font-bold hover:underline">Agendar Aula &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modality 4: Hidroginástica & Saúde Articular -->
+        <div class="f4-card overflow-hidden flex flex-col group">
+          <div class="h-48 relative overflow-hidden">
+            <img src="assets/images/916221660_1853114969887362_3373007749334587612_n_1_.jpg" alt="Hidroginástica F4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-f4-card via-f4-card/40 to-transparent"></div>
+            <span class="absolute top-4 left-4 badge-cyan">Zero Impacto</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">Hidroginástica</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Exercícios dinâmicos ao som de música animada. Melhora o tônus muscular, a circulação sanguínea e a capacidade respiratória protegendo joelhos e coluna.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs">
+              <span class="text-slate-400"><i class="fa-solid fa-heart text-rose-400 mr-1"></i> Saúde &amp; Disposição</span>
+              <a href="#aula-gratis" class="text-f4-orange font-bold hover:underline">Agendar Aula &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modality 5: Condicionamento Físico & Funcional -->
+        <div class="f4-card overflow-hidden flex flex-col group">
+          <div class="h-48 relative overflow-hidden">
+            <img src="assets/images/909182698_1853114959887363_113182540755178719_n_1_.jpg" alt="Condicionamento Físico F4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-f4-card via-f4-card/40 to-transparent"></div>
+            <span class="absolute top-4 left-4 badge-pill">Alta Queima Calórica</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">Condicionamento Físico</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Circuitos metabólicos e treino de resistência para acelerar a queima calórica, aprimorar a postura e recuperar a vitalidade do seu dia a dia.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs">
+              <span class="text-slate-400"><i class="fa-solid fa-fire text-amber-500 mr-1"></i> Energia &amp; Agilidade</span>
+              <a href="#aula-gratis" class="text-f4-orange font-bold hover:underline">Agendar Aula &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modality 6: Ballet Infantil & Ginástica -->
+        <div class="f4-card overflow-hidden flex flex-col group">
+          <div class="h-48 relative overflow-hidden">
+            <img src="assets/images/914522228_18465214426140185_2863136115164060172_n_1_.jpg" alt="Ballet Infantil F4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-f4-card via-f4-card/40 to-transparent"></div>
+            <span class="absolute top-4 left-4 badge-pill">Disciplina &amp; Postura</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">Ballet Infantil &amp; Ginástica</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Aulas lúdicas que desenvolvem ritmo, postura, flexibilidade e concentração. Uma oportunidade inestimável para gastar energia e fazer amigos saudáveis.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs">
+              <span class="text-slate-400"><i class="fa-solid fa-ribbon text-f4-orange mr-1"></i> Turmas por faixa etária</span>
+              <a href="#aula-gratis" class="text-f4-orange font-bold hover:underline">Agendar Aula &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PLANOS & CONSULTORIA (#planos) - 100% SEM PREÇOS, FOCO EM ATENDIMENTO
+       ========================================================================== -->
+  <section id="planos" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="badge-pill mb-3">Opções Flexíveis de Treinamento</span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
+          Planos Sob Medida para <span class="text-f4-orange">Você e sua Família</span>
+        </h2>
+        <p class="text-slate-300 mt-4 text-base sm:text-lg">
+          Montamos sua grade de treinos de acordo com sua rotina e objetivos. Fale diretamente com nossa recepção para conhecer horários disponíveis e condições especiais.
+        </p>
+      </div>
+
+      <!-- Descriptive Cards (4 Options - SEM PREÇOS) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+        
+        <!-- Option 1: Musculação & Fitness -->
+        <div class="f4-card p-6 flex flex-col justify-between relative border-white/10">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-white/5 text-f4-orange flex items-center justify-center text-lg mb-4">
+              <i class="fa-solid fa-dumbbell"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Musculação</span>
+            <h3 class="font-heading font-black text-2xl text-white mt-1">Plano Fitness</h3>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+              Acesso livre à sala de musculação completa, com acompanhamento de instrutores para tirar dúvidas e corrigir exercícios.
+            </p>
+
+            <ul class="space-y-3 text-xs text-slate-300 border-t border-white/5 pt-4 mt-6">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-green-400 text-sm"></i> Acesso total aos aparelhos
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-green-400 text-sm"></i> Ficha de treino personalizada
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-green-400 text-sm"></i> Instrutor presente no salão
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-green-400 text-sm"></i> Horários flexíveis de treino
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <a href="https://wa.me/551232045859?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20informa%C3%A7%C3%B5es%20sobre%20o%20Plano%20Fitness%20(Muscula%C3%A7%C3%A3o)." target="_blank" rel="noopener noreferrer" class="btn-orange-outline w-full py-3 text-xs uppercase tracking-wider font-extrabold text-center block">
+              Consultar Informações
+            </a>
+          </div>
+        </div>
+
+        <!-- Option 2: Natação Adulto -->
+        <div class="f4-card p-6 flex flex-col justify-between relative border-white/10">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-f4-water/10 text-f4-water flex items-center justify-center text-lg mb-4">
+              <i class="fa-solid fa-person-swimming"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-f4-water">Aquático</span>
+            <h3 class="font-heading font-black text-2xl text-white mt-1">Plano Natação</h3>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+              Aulas práticas em piscina aquecida com turmas reduzidas por professor para máxima segurança e aprendizado rápido.
+            </p>
+
+            <ul class="space-y-3 text-xs text-slate-300 border-t border-white/5 pt-4 mt-6">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-green-400 text-sm"></i> Piscina aquecida e tratada
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-green-400 text-sm"></i> Poucos alunos por raia
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-green-400 text-sm"></i> Metodologia individualizada
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-green-400 text-sm"></i> Iniciação e aperfeiçoamento
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <a href="https://wa.me/551232045859?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20hor%C3%A1rios%20e%20turmas%20do%20Plano%20Nata%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-cyan-outline w-full py-3 text-xs uppercase tracking-wider font-extrabold text-center block">
+              Consultar Turmas
+            </a>
+          </div>
+        </div>
+
+        <!-- Option 3: PLANO F4 TOTAL (DESTAQUE / COMBO) -->
+        <div class="f4-card p-6 flex flex-col justify-between relative border-f4-orange shadow-2xl bg-gradient-to-b from-f4-card via-[#1A2232] to-f4-card transform lg:-translate-y-3">
+          <!-- Best Value Badge -->
+          <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-f4-orange text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
+            Mais Procurado • Saúde Integrada
+          </div>
+
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-f4-orange/20 text-f4-orange flex items-center justify-center text-lg mb-4">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-f4-orange">Experiência Completa</span>
+            <h3 class="font-heading font-black text-2xl text-white mt-1">F4 Total (Combo)</h3>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+              Natação aquecida + Musculação livre. O pacote integrado ideal para transformar seu corpo, resistência e qualidade de vida.
+            </p>
+
+            <ul class="space-y-3 text-xs text-slate-200 border-t border-white/10 pt-4 mt-6">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-f4-orange text-sm"></i> Acesso total à Musculação
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-f4-orange text-sm"></i> Aulas de Natação regulares
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-f4-orange text-sm"></i> Avaliação física periódica
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-f4-orange text-sm"></i> Vestiários e duchas aquecidas
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <a href="https://wa.me/551232045859?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Plano%20F4%20Total%20(Nata%C3%A7%C3%A3o%20%2B%20Muscula%C3%A7%C3%A3o)." target="_blank" rel="noopener noreferrer" class="btn-orange w-full py-3.5 text-xs uppercase tracking-wider font-black text-center block shadow-lg">
+              Consultar F4 Total
+            </a>
+          </div>
+        </div>
+
+        <!-- Option 4: Kids & Bebê -->
+        <div class="f4-card p-6 flex flex-col justify-between relative border-white/10">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg mb-4">
+              <i class="fa-solid fa-child"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Infantil</span>
+            <h3 class="font-heading font-black text-2xl text-white mt-1">Kids &amp; Bebê</h3>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+              Natação infantil lúdica ou Ballet para crianças desenvolverem autonomia, coordenação motora e saúde longe das telas.
+            </p>
+
+            <ul class="space-y-3 text-xs text-slate-300 border-t border-white/5 pt-4 mt-6">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-green-400 text-sm"></i> Professores acolhedores
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-green-400 text-sm"></i> Segurança e atenção total
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-green-400 text-sm"></i> Piscina aquecida e coberta
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-green-400 text-sm"></i> Opções de natação ou ballet
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <a href="https://wa.me/551232045859?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20vagas%20para%20as%20turmas%20Kids%20e%20Beb%C3%AA." target="_blank" rel="noopener noreferrer" class="btn-orange-outline w-full py-3 text-xs uppercase tracking-wider font-extrabold text-center block">
+              Consultar Turmas Kids
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Note on Trial Class -->
+      <div class="mt-12 text-center text-xs text-slate-400">
+        <i class="fa-solid fa-shield-check text-f4-orange mr-1"></i> Venha fazer uma aula experimental gratuita antes de se decidir! Atendimento humanizado e sem compromisso.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CALCULADORA DE IMC ESPORTIVA F4 (#imc)
+       ========================================================================== -->
+  <section id="imc" class="py-20 bg-f4-dark/60 border-y border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Calculator Explanation -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="badge-pill">Ferramenta Interativa</span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl text-white tracking-tight">
+            Calcule seu IMC e Receba a <span class="text-f4-orange">Recomendação Ideal F4</span>
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            O Índice de Massa Corporal (IMC) é o primeiro passo para mapear sua condição atual. Na Academia F4, cruzamos seu resultado com a modalidade aquática ou de musculação perfeita para você conquistar saúde com segurança articular.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="flex items-center gap-3 text-xs text-slate-300">
+              <span class="w-6 h-6 rounded-md bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold">1</span>
+              <span>Menos de 18.5: Foco em ganho muscular e força funcional</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs text-slate-300">
+              <span class="w-6 h-6 rounded-md bg-green-500/20 text-green-400 flex items-center justify-center font-bold">2</span>
+              <span>18.5 a 24.9: Manutenção, condicionamento e alta resistência</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs text-slate-300">
+              <span class="w-6 h-6 rounded-md bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">3</span>
+              <span>25 a 29.9: Natação e hidro para queima sem impacto nos joelhos</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs text-slate-300">
+              <span class="w-6 h-6 rounded-md bg-red-500/20 text-red-400 flex items-center justify-center font-bold">4</span>
+              <span>30+: Exercícios aquáticos terapêuticos e evolução gradual</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculator Form & Output Container -->
+        <div class="lg:col-span-7">
+          <div class="f4-card p-8 border-white/10">
+            <form id="bmiForm" class="space-y-6">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="bmiWeight" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                    Seu Peso (kg) *
+                  </label>
+                  <input type="number" id="bmiWeight" required min="30" max="250" step="0.5" placeholder="Ex: 75.5" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-f4-orange transition-colors">
+                </div>
+
+                <div>
+                  <label for="bmiHeight" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                    Sua Altura (cm) *
+                  </label>
+                  <input type="number" id="bmiHeight" required min="100" max="230" step="1" placeholder="Ex: 175" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-f4-orange transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="bmiAge" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                    Sua Idade
+                  </label>
+                  <input type="number" id="bmiAge" min="5" max="100" placeholder="Ex: 32" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-f4-orange transition-colors">
+                </div>
+
+                <div>
+                  <label for="bmiGoal" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                    Objetivo Principal
+                  </label>
+                  <select id="bmiGoal" class="w-full px-4 py-3 rounded-xl bg-[#151B26] border border-white/10 text-white focus:outline-none focus:border-f4-orange transition-colors">
+                    <option value="saude">Qualidade de Vida &amp; Bem-Estar</option>
+                    <option value="emagrecimento">Emagrecimento &amp; Definição</option>
+                    <option value="natacao">Aprender ou Aperfeiçoar Natação</option>
+                    <option value="hipertrofia">Ganho de Massa Muscular</option>
+                    <option value="articulacao">Exercícios Sem Impacto Articular</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-orange w-full py-4 text-xs uppercase tracking-wider font-black">
+                <i class="fa-solid fa-calculator mr-2"></i> Calcular Meu IMC &amp; Descobrir Treino
+              </button>
+            </form>
+
+            <!-- Dynamic Result Card -->
+            <div id="bmiResultContainer" class="hidden mt-8 pt-6 border-t border-white/10 animate-fade-in">
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <span class="text-xs text-slate-400 block">Seu Índice de Massa Corporal:</span>
+                  <span id="bmiValue" class="text-4xl font-black font-heading text-white">--</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs text-slate-400 block">Classificação:</span>
+                  <span id="bmiCategory" class="text-lg font-bold font-heading text-green-400">Normal</span>
+                </div>
+              </div>
+
+              <!-- Gauge Meter -->
+              <div class="w-full bg-white/10 h-3 rounded-full overflow-hidden mb-4">
+                <div id="bmiGauge" class="h-full bg-green-500 transition-all duration-700 w-0"></div>
+              </div>
+
+              <!-- Tailored Advice -->
+              <div class="p-4 rounded-xl bg-white/5 border border-white/5 text-xs text-slate-300 leading-relaxed mb-4">
+                <strong class="text-white block mb-1">
+                  <i class="fa-solid fa-lightbulb text-f4-orange mr-1"></i> Recomendação dos Professores da F4:
+                </strong>
+                <span id="bmiAdvice">Preencha os campos para receber a prescrição.</span>
+              </div>
+
+              <a id="bmiPlanCta" href="https://wa.me/551232045859" target="_blank" rel="noopener noreferrer" class="btn-orange-outline w-full py-3 text-xs uppercase tracking-wider font-extrabold text-center block">
+                <i class="fa-brands fa-whatsapp text-green-400 mr-2"></i> Agendar Aula Experimental com Esse Foco
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GALERIA DE FOTOS F4 (#galeria)
+       ========================================================================== -->
+  <section id="galeria" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="badge-pill mb-3">Conheça Nossas Instalações</span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
+          Galeria de Fotos da <span class="text-f4-orange">Academia F4</span>
+        </h2>
+        <p class="text-slate-300 mt-4 text-base">
+          Ambiente estruturado, piscinas cristalinas e climatizadas, aparelhos modernos e espaço amplo no Urbanova.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-2">
+          <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold transition-all bg-[#FF6600] text-white" data-filter="todos">
+            Todas as Fotos
+          </button>
+          <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold transition-all bg-white/5 text-slate-400 hover:text-white" data-filter="natacao">
+            Natação &amp; Piscinas
+          </button>
+          <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold transition-all bg-white/5 text-slate-400 hover:text-white" data-filter="musculacao">
+            Musculação &amp; Aparelhos
+          </button>
+          <button class="gallery-filter-btn px-5 py-2 rounded-full text-xs font-bold transition-all bg-white/5 text-slate-400 hover:text-white" data-filter="estrutura">
+            Fachada &amp; Estrutura
+          </button>
+        </div>
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Photo 1: Piscina Aquecida Google -->
+        <div class="gallery-item f4-card overflow-hidden cursor-pointer group relative h-72" data-category="natacao" data-caption="Piscina coberta e aquecida da Academia F4 no Urbanova com raias demarcadas e temperatura agradável o ano todo.">
+          <img src="assets/images/f4-piscina-google.jpg" alt="Piscina Aquecida F4 Natação Urbanova" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-f4-deep via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity flex items-end p-6">
+            <span class="text-xs font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-f4-orange"></i> Piscina Aquecida &amp; Tratada
+            </span>
+          </div>
+        </div>
+
+        <!-- Photo 2: Musculação Aparelhos Google -->
+        <div class="gallery-item f4-card overflow-hidden cursor-pointer group relative h-72" data-category="musculacao" data-caption="Sala de musculação com equipamentos biomecânicos e halteres para treinos de hipertrofia e condicionamento.">
+          <img src="assets/images/f4-interior-google.jpg" alt="Equipamentos de Musculação Academia F4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-f4-deep via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity flex items-end p-6">
+            <span class="text-xs font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-f4-orange"></i> Sala de Musculação &amp; Força
+            </span>
+          </div>
+        </div>
+
+        <!-- Photo 3: Fachada Urbanova -->
+        <div class="gallery-item f4-card overflow-hidden cursor-pointer group relative h-72" data-category="estrutura" data-caption="Fachada da Academia F4 na Av. Shishima Hifumi, 1250 - Urbanova, São José dos Campos.">
+          <img src="assets/images/f4-fachada-streetview.jpg" alt="Fachada Academia F4 Urbanova São José dos Campos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-f4-deep via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity flex items-end p-6">
+            <span class="text-xs font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-f4-orange"></i> Fachada &amp; Localização Nobre
+            </span>
+          </div>
+        </div>
+
+        <!-- Photo 4: Post FB 1 - Natação Infantil -->
+        <div class="gallery-item f4-card overflow-hidden cursor-pointer group relative h-72" data-category="natacao" data-caption="Aulas de natação infantil com professores dedicados e metodologia focada em acolhimento e aprendizado seguro.">
+          <img src="assets/images/909661577_1850070706858455_8520941677108773353_n_1_.jpg" alt="Natação Infantil Academia F4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-f4-deep via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity flex items-end p-6">
+            <span class="text-xs font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-f4-orange"></i> Natação Infantil &amp; Adaptação
+            </span>
+          </div>
+        </div>
+
+        <!-- Photo 5: Post FB 2 - Condicionamento e Ginástica -->
+        <div class="gallery-item f4-card overflow-hidden cursor-pointer group relative h-72" data-category="musculacao" data-caption="Aulas de ginástica, condicionamento e mobilidade para quem quer mais saúde e energia.">
+          <img src="assets/images/909182698_1853114959887363_113182540755178719_n_1_.jpg" alt="Condicionamento Físico e Treinos F4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-f4-deep via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity flex items-end p-6">
+            <span class="text-xs font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-f4-orange"></i> Condicionamento &amp; Ginástica
+            </span>
+          </div>
+        </div>
+
+        <!-- Photo 6: Post FB 3 - Comunidade e Eventos F4 -->
+        <div class="gallery-item f4-card overflow-hidden cursor-pointer group relative h-72" data-category="estrutura" data-caption="Mais de 15 anos de história, eventos e integração esportiva no Urbanova.">
+          <img src="assets/images/916221660_1853114969887362_3373007749334587612_n_1_.jpg" alt="Comunidade F4 Natação e Fitness" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-f4-deep via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity flex items-end p-6">
+            <span class="text-xs font-bold text-white flex items-center gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-f4-orange"></i> Eventos &amp; Interacademias F4
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       AVALIAÇÕES REAIS DOS ALUNOS (#depoimentos)
+       (Exatas opiniões reais enviadas do Google Maps)
+       ========================================================================== -->
+  <section id="depoimentos" class="py-20 md:py-28 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="badge-pill mb-3">Opiniões Reais &amp; Verificadas</span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
+          O Que Quem Treina na <span class="text-f4-orange">F4 Tem a Dizer</span>
+        </h2>
+        <p class="text-slate-300 mt-4 text-base">
+          Transparência total. Veja o depoimento espontâneo de alunos que vivenciam o dia a dia da nossa academia no Urbanova.
+        </p>
+      </div>
+
+      <!-- Real Reviews Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        
+        <!-- Review 1: Vanessa Morales Meirelles (5 Estrelas) -->
+        <div class="f4-card p-8 border-f4-water/30 relative flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg">
+                  V
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">Vanessa Morales Meirelles</h4>
+                  <span class="text-xs text-slate-400">11 avaliações no Google</span>
+                </div>
+              </div>
+              <div class="flex text-amber-400 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+
+            <p class="text-slate-200 text-sm leading-relaxed italic">
+              &ldquo;Professores d natação maravilhosos. Poucos alunos pra cada professor, proporcionando aprendizado e segurança. Agradecimento aos professores queridos Janderson, Jairo, Mila, Jaime e Italo.&rdquo;
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
+            <span class="flex items-center gap-1.5 text-f4-water font-semibold">
+              <i class="fa-solid fa-circle-check"></i> Avaliação Verificada
+            </span>
+            <span>Google Reviews</span>
+          </div>
+        </div>
+
+        <!-- Review 2: Vanessa André (Local Guide - 4 Estrelas) -->
+        <div class="f4-card p-8 border-f4-orange/30 relative flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold text-lg">
+                  V
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">Vanessa André</h4>
+                  <span class="text-xs text-amber-400 font-semibold">Local Guide • 35 avaliações • 47 fotos</span>
+                </div>
+              </div>
+              <div class="flex text-amber-400 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star text-slate-600"></i>
+              </div>
+            </div>
+
+            <p class="text-slate-200 text-sm leading-relaxed italic">
+              &ldquo;Estrutura da academia em si é boa, grande e espaçosa... os equipamentos em sua maioria são bons, a instrutora da parte da manhã é muito educada e atenciosa!&rdquo;
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
+            <span class="flex items-center gap-1.5 text-f4-orange font-semibold">
+              <i class="fa-solid fa-circle-check"></i> Avaliação Verificada
+            </span>
+            <span>Google Reviews</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Rating Summary Banner -->
+      <div class="mt-12 p-6 rounded-2xl bg-f4-card border border-white/10 max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+        <div class="flex items-center gap-4">
+          <div class="text-4xl font-black font-heading text-white">4,2</div>
+          <div>
+            <div class="flex text-amber-400 text-sm mb-1 justify-center sm:justify-start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="text-xs text-slate-300">Baseado em <strong>180 avaliações</strong> reais no Google</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="https://www.google.com/maps/place/F4+Nata%C3%A7%C3%A3o+%26+Fitness/@-23.2031668,-45.9406831,17z" target="_blank" rel="noopener noreferrer" class="btn-orange-outline px-5 py-2.5 text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+            <span>Ver Todas no Google Maps</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HORÁRIOS & LOCALIZAÇÃO (#localizacao)
+       (Dados exatos da foto e Google Maps)
+       ========================================================================== -->
+  <section id="localizacao" class="py-20 md:py-28 bg-f4-dark/50 border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="badge-pill mb-3">Fácil Acesso no Urbanova</span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
+          Horários de Funcionamento &amp; <span class="text-f4-orange">Localização</span>
+        </h2>
+        <p class="text-slate-300 mt-4 text-base">
+          Estamos situados na principal avenida do Urbanova com estacionamento e acesso facilitado para toda a família.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Opening Hours Card (Exatos da foto do Google Maps) -->
+        <div class="lg:col-span-5 f4-card p-8 border-white/10 space-y-6">
+          <div class="flex items-center justify-between pb-4 border-b border-white/10">
+            <div>
+              <h3 class="font-heading font-bold text-xl text-white">Quadro de Horários</h3>
+              <p class="text-xs text-slate-400 mt-0.5">Semana esportiva completa</p>
+            </div>
+            <!-- Dynamic Status Pill -->
+            <div id="liveStatusDetail" class="text-xs font-bold flex items-center gap-2">
+              <span class="status-dot-active"></span>
+              <span class="text-green-400">Aberto agora</span>
+            </div>
+          </div>
+
+          <!-- Schedule Table -->
+          <div class="space-y-2.5 text-sm">
+            <div class="flex items-center justify-between py-1.5 px-3 rounded-lg bg-white/[0.02]">
+              <span class="text-slate-300 font-medium">Segunda-feira</span>
+              <span class="text-white font-bold font-heading">06:00 – 21:00</span>
+            </div>
+            <div class="flex items-center justify-between py-1.5 px-3 rounded-lg bg-white/[0.02]">
+              <span class="text-slate-300 font-medium">Terça-feira</span>
+              <span class="text-white font-bold font-heading">06:00 – 21:00</span>
+            </div>
+            <div class="flex items-center justify-between py-1.5 px-3 rounded-lg bg-white/[0.02]">
+              <span class="text-slate-300 font-medium">Quarta-feira</span>
+              <span class="text-white font-bold font-heading">06:00 – 21:00</span>
+            </div>
+            <div class="flex items-center justify-between py-1.5 px-3 rounded-lg bg-white/[0.02]">
+              <span class="text-slate-300 font-medium">Quinta-feira</span>
+              <span class="text-white font-bold font-heading">06:00 – 21:00</span>
+            </div>
+            <div class="flex items-center justify-between py-1.5 px-3 rounded-lg bg-white/[0.02]">
+              <span class="text-slate-300 font-medium">Sexta-feira</span>
+              <span class="text-white font-bold font-heading">06:00 – 21:00</span>
+            </div>
+            <div class="flex items-center justify-between py-1.5 px-3 rounded-lg bg-f4-orange/10 border border-f4-orange/20">
+              <span class="text-f4-orangeLight font-semibold">Sábado</span>
+              <span class="text-white font-bold font-heading">09:00 – 12:00</span>
+            </div>
+            <div class="flex items-center justify-between py-1.5 px-3 rounded-lg bg-white/[0.02] text-slate-500">
+              <span class="font-medium">Domingo</span>
+              <span class="font-bold text-slate-400">Fechado</span>
+            </div>
+          </div>
+
+          <!-- Contact Details -->
+          <div class="pt-6 border-t border-white/10 space-y-4 text-xs text-slate-300">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-map-location-dot text-f4-orange text-base mt-0.5"></i>
+              <div>
+                <strong class="text-white block text-sm">Endereço:</strong>
+                <span>Av. Shishima Hifumi, 1250 - Urbanova, São José dos Campos - SP, 12244-000</span>
+                <span class="block text-slate-500 mt-0.5">Plus Code: Q3W5+PP Urbanova, São José dos Campos - SP</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-f4-orange text-base"></i>
+              <div>
+                <strong class="text-white block">Telefone Fixo:</strong>
+                <a href="tel:1232045859" class="hover:text-f4-orange font-bold text-sm">(12) 3204-5859</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <i class="fa-brands fa-whatsapp text-f4-water text-base"></i>
+              <div>
+                <strong class="text-white block">WhatsApp Atendimento:</strong>
+                <a href="https://wa.me/551232045859" target="_blank" rel="noopener noreferrer" class="hover:text-f4-water font-bold text-sm text-f4-water">(12) 3204-5859</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-slate-400 text-base"></i>
+              <div>
+                <strong class="text-white block">E-mail:</strong>
+                <span>contato@academiaf4.com.br</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Directions CTAs -->
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Academia+F4+Nata%C3%A7%C3%A3o+e+Fitness+Urbanova" target="_blank" rel="noopener noreferrer" class="btn-orange-outline py-2.5 text-xs font-bold text-center flex items-center justify-center gap-2">
+              <i class="fa-solid fa-route"></i> Google Maps
+            </a>
+            <a href="https://waze.com/ul?q=Academia+F4+Nata%C3%A7%C3%A3o+e+Fitness" target="_blank" rel="noopener noreferrer" class="btn-cyan-outline py-2.5 text-xs font-bold text-center flex items-center justify-center gap-2">
+              <i class="fa-brands fa-waze"></i> Abrir no Waze
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="lg:col-span-7 h-[520px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.6257544065664!2d-45.943258!3d-23.2031668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc35cd157ec75b%3A0xc4abd669b72fc103!2sF4%20Nata%C3%A7%C3%A3o%20%26%20Fitness!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="100%" 
+            style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(1.1) brightness(0.85);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de Localização da Academia F4 Natação e Fitness no Urbanova">
+          </iframe>
+
+          <!-- Floating Pin Label -->
+          <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-f4-card/95 backdrop-blur-md border border-white/10 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-f4-orange flex items-center justify-center text-white text-lg">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">F4 Natação &amp; Fitness</h4>
+                <p class="text-xs text-slate-300">Av. Shishima Hifumi, 1250 - Urbanova</p>
+              </div>
+            </div>
+            <a href="https://www.google.com/maps/place/F4+Nata%C3%A7%C3%A3o+%26+Fitness/@-23.2031668,-45.9406831,17z" target="_blank" rel="noopener noreferrer" class="btn-orange px-4 py-2 text-xs font-bold uppercase tracking-wider hidden sm:inline-flex">
+              Ver no Maps
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FORMULÁRIO DE AULA EXPERIMENTAL GRÁTIS (#aula-gratis)
+       ========================================================================== -->
+  <section id="aula-gratis" class="py-20 md:py-28 relative overflow-hidden bg-gradient-to-b from-f4-deep to-[#111722]">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-f4-orange/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="f4-card p-8 sm:p-12 border-f4-orange/40 shadow-2xl bg-f4-card/90">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="badge-pill mb-3">Sem Compromisso</span>
+          <h2 class="font-heading font-black text-3xl sm:text-4xl text-white tracking-tight">
+            Experimente um Dia <span class="text-f4-orange">Totalmente Grátis</span>
+          </h2>
+          <p class="text-slate-300 mt-3 text-sm sm:text-base leading-relaxed">
+            Venha conhecer nossa piscina aquecida, nossa sala de musculação e nossa equipe. Preencha seus dados para agendarmos sua aula experimental no melhor horário!
+          </p>
+        </div>
+
+        <form id="trialForm" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <div>
+              <label for="trialName" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                Seu Nome Completo *
+              </label>
+              <input type="text" id="trialName" required placeholder="Como podemos te chamar?" class="w-full px-4 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-f4-orange transition-colors">
+            </div>
+
+            <div>
+              <label for="trialPhone" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                WhatsApp com DDD *
+              </label>
+              <input type="tel" id="trialPhone" required placeholder="(12) 99999-9999" class="w-full px-4 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-f4-orange transition-colors">
+            </div>
+
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <div>
+              <label for="trialModality" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                Modalidade de Interesse
+              </label>
+              <select id="trialModality" class="w-full px-4 py-3.5 rounded-xl bg-[#151B26] border border-white/10 text-white focus:outline-none focus:border-f4-orange transition-colors">
+                <option value="Natação Adulto">Natação Adulto</option>
+                <option value="Natação Infantil ou Bebê">Natação Infantil ou Bebê</option>
+                <option value="Musculação & Fitness">Musculação &amp; Fitness</option>
+                <option value="Hidroginástica">Hidroginástica</option>
+                <option value="Plano F4 Total (Natação + Musculação)">Plano F4 Total (Natação + Musculação)</option>
+                <option value="Ballet Infantil">Ballet Infantil</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="trialShift" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                Melhor Turno para Visita
+              </label>
+              <select id="trialShift" class="w-full px-4 py-3.5 rounded-xl bg-[#151B26] border border-white/10 text-white focus:outline-none focus:border-f4-orange transition-colors">
+                <option value="Manhã (06h às 12h)">Manhã (06h às 12h)</option>
+                <option value="Tarde (12h às 18h)">Tarde (12h às 18h)</option>
+                <option value="Noite (18h às 21h)">Noite (18h às 21h)</option>
+                <option value="Sábado de Manhã (09h às 12h)">Sábado de Manhã (09h às 12h)</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="btn-orange w-full py-4 text-sm uppercase tracking-wider font-black shadow-xl">
+              <i class="fa-solid fa-paper-plane mr-2"></i> Solicitar Minha Aula Experimental Grátis
+            </button>
+            <p class="text-[11px] text-slate-400 text-center mt-3">
+              <i class="fa-solid fa-lock text-slate-500 mr-1"></i> Seus dados estão seguros e não enviamos spam. Entraremos em contato pelo WhatsApp para confirmar o horário disponível.
+            </p>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PERGUNTAS FREQUENTES (#faq)
+       ========================================================================== -->
+  <section id="faq" class="py-20 md:py-28 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <span class="badge-pill mb-3">Tire Suas Dúvidas</span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl text-white tracking-tight">
+          Perguntas <span class="text-f4-orange">Frequentes</span>
+        </h2>
+        <p class="text-slate-300 mt-3 text-base">
+          Tudo o que você precisa saber antes de iniciar seus treinos na Academia F4.
+        </p>
+      </div>
+
+      <!-- Accordion List -->
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item f4-card p-6 border-white/10">
+          <div class="faq-question flex items-center justify-between font-heading font-bold text-base sm:text-lg text-white">
+            <span>A piscina é realmente aquecida e tratada?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-f4-orange text-sm ml-4"></i>
+          </div>
+          <div class="faq-answer text-slate-300 text-sm leading-relaxed">
+            <div class="pt-4 border-t border-white/5 mt-4">
+              Sim! Nossa piscina possui sistema de aquecimento contínuo que mantém a água na temperatura ideal durante todas as estações do ano, inclusive no inverno. O tratamento químico e a filtragem seguem os mais altos padrões de higiene e segurança biológica.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item f4-card p-6 border-white/10">
+          <div class="faq-question flex items-center justify-between font-heading font-bold text-base sm:text-lg text-white">
+            <span>Quantos alunos ficam por professor nas aulas de natação?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-f4-orange text-sm ml-4"></i>
+          </div>
+          <div class="faq-answer text-slate-300 text-sm leading-relaxed">
+            <div class="pt-4 border-t border-white/5 mt-4">
+              Trabalhamos rigorosamente com turmas reduzidas. Esse é um dos maiores diferenciais da F4: garantir que o professor tenha atenção individualizada para cada aluno, ensinando a técnica correta com total segurança e respeito ao ritmo de cada um.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item f4-card p-6 border-white/10">
+          <div class="faq-question flex items-center justify-between font-heading font-bold text-base sm:text-lg text-white">
+            <span>Nunca nadei na vida e tenho receio de água. Posso começar?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-f4-orange text-sm ml-4"></i>
+          </div>
+          <div class="faq-answer text-slate-300 text-sm leading-relaxed">
+            <div class="pt-4 border-t border-white/5 mt-4">
+              Com certeza! Temos um programa dedicado de adaptação aquática para adultos que nunca nadaram ou têm fobia de água. Nossos professores entram na água com você e o processo é 100% humanizado e gradual.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item f4-card p-6 border-white/10">
+          <div class="faq-question flex items-center justify-between font-heading font-bold text-base sm:text-lg text-white">
+            <span>Como funciona a combinação de Natação e Musculação?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-f4-orange text-sm ml-4"></i>
+          </div>
+          <div class="faq-answer text-slate-300 text-sm leading-relaxed">
+            <div class="pt-4 border-t border-white/5 mt-4">
+              Você pode optar pelo formato <strong>F4 Total</strong>, que dá acesso livre à musculação e inclui suas aulas práticas de natação com acompanhamento pedagógico, tudo num único cadastro simplificado.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item f4-card p-6 border-white/10">
+          <div class="faq-question flex items-center justify-between font-heading font-bold text-base sm:text-lg text-white">
+            <span>A academia conta com estacionamento no Urbanova?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-f4-orange text-sm ml-4"></i>
+          </div>
+          <div class="faq-answer text-slate-300 text-sm leading-relaxed">
+            <div class="pt-4 border-t border-white/5 mt-4">
+              Sim! Nossa localização na Av. Shishima Hifumi, 1250 conta com vagas frontais e facilidade para estacionar nas proximidades com tranquilidade e segurança.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item f4-card p-6 border-white/10">
+          <div class="faq-question flex items-center justify-between font-heading font-bold text-base sm:text-lg text-white">
+            <span>A partir de qual idade as crianças podem fazer natação na F4?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-f4-orange text-sm ml-4"></i>
+          </div>
+          <div class="faq-answer text-slate-300 text-sm leading-relaxed">
+            <div class="pt-4 border-t border-white/5 mt-4">
+              Atendemos bebês a partir dos 6 meses de idade na natação para bebês (com participação dos pais), além de turmas infantis separadas por faixa etária até a adolescência e natação competitiva.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER / RODAPÉ
+       ========================================================================== -->
+  <footer class="bg-black/90 border-t border-white/10 pt-16 pb-12 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Col 1: Brand & Slogan -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="w-48 h-12 flex items-center">
+            <img src="assets/icons/f4-logo.svg" alt="F4 Natação &amp; Fitness Logo" class="h-10 w-auto object-contain">
+          </div>
+          <p class="text-sm font-heading font-bold text-f4-orange">
+            NADA MAIS. VIVA MELHOR.
+          </p>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Fundada em 1° de novembro de 2011, a Academia F4 é referência no Urbanova em São José dos Campos. Tradição, respeito ao aluno e saúde aquática e muscular de alta qualidade.
+          </p>
+          <div id="footerStatusBadge" class="text-xs font-semibold flex items-center gap-2 pt-1">
+            <span class="status-dot-active"></span>
+            <span class="text-green-400">Aberto agora • Fecha às 21:00</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navegação Rápida -->
+        <div>
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider mb-4">Navegação</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#inicio" class="hover:text-f4-orange transition-colors">Início</a></li>
+            <li><a href="#sobre" class="hover:text-f4-orange transition-colors">Diferenciais</a></li>
+            <li><a href="#modalidades" class="hover:text-f4-orange transition-colors">Modalidades</a></li>
+            <li><a href="#planos" class="hover:text-f4-orange transition-colors">Planos &amp; Atendimento</a></li>
+            <li><a href="#imc" class="hover:text-f4-orange transition-colors">Calculadora IMC</a></li>
+            <li><a href="#galeria" class="hover:text-f4-orange transition-colors">Galeria de Fotos</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Modalidades -->
+        <div>
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider mb-4">Modalidades</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#modalidades" class="hover:text-f4-orange transition-colors">Natação Adulto</a></li>
+            <li><a href="#modalidades" class="hover:text-f4-orange transition-colors">Natação Infantil &amp; Bebês</a></li>
+            <li><a href="#modalidades" class="hover:text-f4-orange transition-colors">Musculação &amp; Hipertrofia</a></li>
+            <li><a href="#modalidades" class="hover:text-f4-orange transition-colors">Hidroginástica Aquática</a></li>
+            <li><a href="#modalidades" class="hover:text-f4-orange transition-colors">Condicionamento Físico</a></li>
+            <li><a href="#modalidades" class="hover:text-f4-orange transition-colors">Ballet Infantil</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contato & Redes -->
+        <div>
+          <h4 class="font-heading font-bold text-sm text-white uppercase tracking-wider mb-4">Atendimento</h4>
+          <ul class="space-y-3 text-xs text-slate-400">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-f4-orange"></i>
+              <a href="tel:1232045859" class="hover:text-white font-semibold">(12) 3204-5859</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-green-400"></i>
+              <a href="https://wa.me/551232045859" target="_blank" rel="noopener noreferrer" class="hover:text-white font-semibold">(12) 3204-5859</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-slate-400"></i>
+              <span>contato@academiaf4.com.br</span>
+            </li>
+            <li class="pt-2">
+              <div class="flex items-center gap-3">
+                <a href="https://www.facebook.com/academiaf4" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 text-white hover:text-f4-orange hover:border-f4-orange flex items-center justify-center transition-all" aria-label="Facebook da F4">
+                  <i class="fa-brands fa-facebook-f text-xs"></i>
+                </a>
+                <a href="https://www.instagram.com/academiaf4" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 text-white hover:text-f4-orange hover:border-f4-orange flex items-center justify-center transition-all" aria-label="Instagram da F4">
+                  <i class="fa-brands fa-instagram text-xs"></i>
+                </a>
+                <a href="https://www.google.com/maps/place/F4+Nata%C3%A7%C3%A3o+%26+Fitness/@-23.2031668,-45.9406831,17z" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 text-white hover:text-f4-orange hover:border-f4-orange flex items-center justify-center transition-all" aria-label="Google Maps da F4">
+                  <i class="fa-solid fa-map-pin text-xs"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          &copy; 2011–2026 Academia F4 Natação &amp; Fitness. Todos os direitos reservados.
+        </div>
+        <div class="flex items-center gap-4">
+          <span>Av. Shishima Hifumi, 1250 - Urbanova, São José dos Campos - SP</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       WHATSAPP FLUTUANTE
+       ========================================================================== -->
+  <a href="https://wa.me/551232045859?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20da%20Academia%20F4." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-500 text-white shadow-2xl flex items-center justify-center text-2xl hover:bg-emerald-600 hover:scale-110 transition-all duration-300 group" aria-label="Fale conosco no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="absolute right-16 bg-[#151B26] text-white text-xs font-semibold px-3 py-1.5 rounded-lg border border-white/10 shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+      Dúvidas? Fale no WhatsApp!
+    </span>
+  </a>
+
+  <!-- ==========================================================================
+       MODAL LIGHTBOX DA GALERIA
+       ========================================================================== -->
+  <div id="galleryLightbox" class="fixed inset-0 z-50 bg-black/95 flex flex-col items-center justify-center p-4 hidden-lightbox">
+    <!-- Close button -->
+    <button id="closeLightbox" aria-label="Fechar Foto" class="absolute top-6 right-6 text-white/80 hover:text-white p-2 text-3xl z-50">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <!-- Nav buttons -->
+    <button id="prevLightbox" aria-label="Foto Anterior" class="absolute left-4 sm:left-8 text-white/80 hover:text-f4-orange p-3 text-2xl z-50">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button id="nextLightbox" aria-label="Próxima Foto" class="absolute right-4 sm:right-8 text-white/80 hover:text-f4-orange p-3 text-2xl z-50">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <!-- Image Display -->
+    <div class="max-w-5xl max-h-[80vh] flex flex-col items-center">
+      <img id="lightboxImage" src="" alt="Foto em destaque da Academia F4" class="max-w-full max-h-[75vh] object-contain rounded-xl shadow-2xl border border-white/10">
+      <p id="lightboxCaption" class="text-xs sm:text-sm text-slate-300 text-center mt-4 max-w-2xl px-4"></p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
